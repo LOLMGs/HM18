@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+		<!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+		<meta charset="utf-8">
+		<title>hm18 : details와 summary 태그</title>
+		<style>
+            @import url(hm18_style.css);
+			a{
+                text-decoration: none;
+                color:darkblue;
+            }
+			.wordArtEffect {
+				color: black;
+				text-shadow: 0px 0px 3px greenyellow;
+			}
+			.wordArtEffect2 {
+				color: black;
+				text-shadow: 0px 0px 3px aquamarine;
+			}
+			.wordArtEffect3 {
+				color: black;
+				text-shadow: 0px 0px 3px rgb(202, 115, 245);
+			}
+			span{
+				color: red;
+				text-shadow: 0px 0px 3px whitesmoke;
+			}
+			span:hover{
+				font-size: 110%;
+			}
+		</style>
+		<script></script>
+	</head>
+
+	<body>
+		<!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+		<h1 class="multiEffect">동호회 정보</h1>
+		<img style="margin-left: 37%;" src="media/동호회정보2.png">
+		<br>
+		<p style="text-align: center; font-size: 15pt;"><strong>★ 배드민턴 동호회 ★</strong></p>
+		<hr style="width: 300px;">
+		<details>				
+			<summary><strong>동호회 소개</strong></summary>
+			<p class="wordArtEffect">
+				안녕하세요.<br>
+				저희 배드민턴 동호회는 인제대학교 학생을 중심으로 활동하는 동호회입니다.<br>
+				현재 동호회 회원을 모집중이며 배드민턴 연습, 자체리그, 주변동호회와<br>
+				교류 및 시합 추진을 목표로 하고있습니다.<br>
+				<br>
+				운동일은 <span>월</span>,<span>수</span>,<span>금</span>,<span>일</span> 주 4회이며 주로 금요일,일요일에 모여서 운동을 진행합니다.<br>
+				<span>최초 약 1개월 정도는 준회원 자격</span>으로 운동을 참석하실 수 있습니다.
+				
+			</p>
+		</details>
+
+		<details>
+			<summary><strong>가입조건</strong></summary>
+
+			<p class="wordArtEffect2">
+				1. 인제대학생<br>
+				2. 개인 배드민턴 라켓 소유자
+				
+			</p>
+		</details>
+
+		<details>
+			<summary><strong>회비</strong></summary>
+			<p class="wordArtEffect3">
+				회비는 <span>약 1개월 경과후 정회원</span>이 되시면 납부하시고,<br>
+				금액은 <span>월 2만원</span>, <span>최초 유니폼비 5만원</span>을 받습니다.
+				
+			</p>
+		</details>
+		<br>
+		
+		<p style="text-align: center;"><a href="hm18_club.html">처음으로</a>
+		<a href="hm18_club_join.html"><br>가입하기</a></p>
+	</body>
+
+</html>
+

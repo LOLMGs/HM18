@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <title> HM18 IoT</title>
+    <style>
+        @import url(hm18_style.css);
+        form{
+            text-align: center;
+        }
+        hr{
+            width: 700px;
+        }
+
+        input {
+            color:black;
+             border: 2px solid #73C7FF; border-radius: 5px;
+        }
+        input:hover{
+            background: aliceblue;
+        }
+        input:focus{
+             font-size: 100%;
+        }
+        span{
+            color:red;
+        }
+        span:hover{
+            font-size: 110%;
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+    <h1 class="multiEffect">홈 제어 시스템 - 온도 및 습도 조절</h1>
+    <br>
+    <img style="margin-left: 430px;" src="media/IOT.png">
+    <p style="text-align: center;"><strong><span>홈 제어하기</span> 버튼을 통해 온도 및 습도를 조절하고 <span>적용</span> 버튼을 눌러<br>
+    홈 IOT로 집을 원격제어 할수있습니다.</strong></p>
+
+
+    <details>
+       <summary><strong style="font-size: 15pt;">홈 제어하기</strong></summary> <hr>
+    <form>
+        지속시간 (0.0~12.0시간) :
+        <input type="number" min="0.0" max="12.0" step="0.5">
+        
+        <br>
+        온도 설정 :10&deg;
+        <input type="range" min="10" max="30" list="temperatures">
+        30&deg;
+        <datalist id="temperatures">
+            <option value="12" label="Low">
+            <option value="20" label="Medium">
+            <option value="28" label="High"></datalist>
+                <br>
+                습도 설정 :10&deg;
+                <input type="range" min="10" max="30" list="sd">
+                30&deg;
+                <datalist id="sd">
+                    <option value="12" label="Low">
+                    <option value="20" label="Medium">
+                    <option value="28" label="High"></datalist>
+                        <br>
+                   
+                           
+                                <tr>
+                                    <td>설정하고 싶은 날짜
+                                    <td> <input type="date" value="2021-04-25">
+                                </tr>
+                                <tr>
+                                    <br>
+                                    <td>시작하고 싶은 시간
+                                    <td> <input type="time" value="13:00">
+                                </tr>
+                                <br>
+                           <input type="submit" value="적용">
+                        <hr>
+                     </form>
+                    </details>
+</body></html>
