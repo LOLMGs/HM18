@@ -1,8 +1,9 @@
-# HM18 X-MAX Card
+## HM18 X-MAX Card
 - hm18_card.html
 > Merry Christmas! 에 color 와 text-shadow 를 이용해 꾸밈<br>
 > Merry Christmas! @keyframes 와 animation, hover 를 이용해 자동으로 움직이게 만들고 마우스를 올리면 움직이게 만듬<br>
 > 트리위 별위에 마우스를 올리면 공백 글씨를 넣고 hover 를 이용해 산타가 나타나게 만듬<br>
+> 트리위 별위에 마우스를 올리면 공백 글씨에 마우스를 올리면 글씨가 점점커짐 hover 이용 font-size<br>
 > border-img 를 이용해 크리스마스 트리에 media 폴더에있는 이미지를 넣어줌<br>
 > MERRY X-MAS 글자에 background 와 color 를 이용해 색을 입힘<br>
 > 그리고 @keyframes 그리고 hover 를 이용해 움직이고 마우스를 올리면 또 움직이게 만듬<br>
