@@ -6,9 +6,9 @@
 > 트리위 별위에 마우스를 올리면 공백 글씨에 마우스를 올리면 글씨가 점점커짐 hover 이용 font-size<br>
 > border-img 를 이용해 크리스마스 트리에 media 폴더에있는 이미지를 넣어줌<br>
 > MERRY X-MAS 글자에 background 와 color 를 이용해 색을 입힘<br>
-> 그리고 @keyframes 그리고 hover 를 이용해 움직이고 마우스를 올리면 또 움직이게 만듬<br>
+> 그리고 @keyframes 그리고 hover 를 이용해 자동으로 움직이고 마우스를 올리면 또 움직이게 만듬<br>
 > 각종 img 파일을 추가하여 크리스마스 트리에 장식을 추가함<br>
-> 트리 장식에 @keyframes 와 animation 을 추가하여 움직이게 만듬<br>
+> 트리 장식에 @keyframes 와 animation 을 추가하여 자동으로 움직이게 만듬<br>
 > 트리 뒤에 img 를 추가해 트리 배경느낌을 살림<br>
 > audio 를 추가하여 음악이 나오게함 <br>
 > hm18, 이정호 글씨 배경과 테두리를 조절하여 꾸미고 font-style 를 이용해 글씨를 기울게함<br>
