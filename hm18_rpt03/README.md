@@ -1,5 +1,6 @@
 ## HM18의 홈페이지 V3
-- Best 3 Movie 클릭시 나오는 이미지 3개 를 각각 마우스를 올리면 사진이 바뀜 (onmouseover, onmouseout  을 이용)
+- Best 3 Movie 클릭시 나오는 이미지 3개 를 각각 마우스를 올리면 사진이 바뀜 <br>
+(onmouseover, onmouseout  을 이용)
 - Best 3 Movie 예고편 부분 모두 window.open()으로 링크를 변경해주었다.
 - Best 3 Movie 와 Best 3 Country 를 클릭한후 콤보박스,라디오박스를 클릭해 다른 페이지로 이동하는것도 JS 의 onchange를 이용한 것임.
 - X-Max 파티 초대장에 이 글씨를 클릭해주세요!! 라는 문구를 추가하고 글씨를 클릭하면 문구가 나오게 했음. (alert를 이용)
