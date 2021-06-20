@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+
+<head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8">
+    <title>hm18 : 나는 누구인가?</title>
+    <style>
+
+        html,
+        body {
+            width: 100%;
+			height: 100%;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        iframe{
+            border: 0;
+        }
+        a{
+			text-decoration: none;
+		}
+
+        .header {
+            text-align: center;
+            padding-top: 1px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8%;
+            background: skyblue;
+        }
+
+        .nav {
+            width: 25%;
+            height: 82%;
+            float: left;
+            background: #e1fae0;
+        }
+
+        .section {
+            width: 50%;
+            height: 82%;
+            float: left;
+            background: aliceblue;
+        }
+        .iframebox{
+            position: relative;
+            width: 100%;
+            padding-bottom: 82%;
+        }
+        .iframebox iframe{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .aside {
+            width: 25%;
+            height: 82%;
+            float: right;
+            background: #e1fae0;
+           
+        }
+
+        .footer {
+            position: fixed;
+            width: 100%;
+            height: 8%;
+            clear: both;
+            background: skyblue;
+            bottom: 0; 
+        }
+        #left{
+			text-align: center;
+			height: 35px;
+            background: skyblue;
+        }
+        #left ul{
+            margin:0;
+            padding: 0;
+            width:100%;
+        }
+        #left ul li{
+            display: inline;
+            list-style-type:none;
+            padding:0px 15px;
+        }
+        #left ul li a{
+			font-size: 14pt;
+            color:whitesmoke;
+            text-decoration:none
+        }
+        #left ul li a:hover{
+            color: lawngreen;
+        }
+        .multiEffect {
+			color: whitesmoke;
+			text-shadow: 2px 2px 2px black, 0 0 25px pink, 0 0 5px springgreen;
+		}
+        .multiEffect2 {
+			color: darkblue;
+			text-shadow: 2px 2px 4px white, 0 0 25px skyblue, 0 0 10px white;
+		}
+        .multiEffect3 {
+			color: royalblue;
+			text-shadow: 2px 2px 4px white, 0 0 25px skyblue, 0 0 10px white;
+		}
+        .multiEffect4 {
+			color: white;
+			text-shadow: 2px 2px 4px darkcyan, 0 0 25px darkcyan, 0 0 10px darkcyan;
+		}
+		.blurText{
+			text-shadow: 3px 3px 5px black;
+		}
+        #hm18{
+			transform: translate(35px, -14px);
+        }
+        input{
+            color: green;
+        }
+        #clock {
+            position:relative;
+            top: -95px;
+            right: 21px;
+            text-align: right;
+            font-size:2em;
+            color:#180544;
+        }
+        #clock2 {
+            position:relative;
+            top: -95px;
+            right: 20px;
+            text-align: right;
+            font-size:1em;
+            color:#180544;
+        }
+    
+
+
+
+    </style>
+    <script>
+    function star1() {
+        var stars = confirm("HM18's 의 Github로 이동하시겠습니까?");
+        return stars;
+    }
+    function star2() {
+        var stars = confirm("HTML5 강의자료 홈페이지로 이동하시겠습니까?");
+        return stars;
+    }
+    function star3() {
+        var stars = confirm("Youtube 사이트로 이동하시겠습니까?");
+        return stars;
+    }
+    function star4() {
+        var stars = confirm("네이버뉴스 사이트로 이동하시겠습니까?");
+        return stars;
+    }
+    function star5() {
+        var stars = confirm("HM18's 의 즐겨찾는 게임카페로 이동하시겠습니까?");
+        return stars;
+    }
+    function star6() {
+        var stars = confirm("인제정보시스템 사이트로 이동하시겠습니까?");
+        return stars;
+    }
+    function star7() {
+        var stars = confirm("네이버 웹툰 사이트로 이동하시겠습니까?");
+        return stars;
+    }
+    function star8() {
+        var stars = confirm("Instargram 사이트로 이동하시겠습니까?");
+        return stars;
+    }
+    function star9() {
+        var stars = confirm("Netflix 사이트로 이동하시겠습니까?");
+        return stars;
+    }
+    function star10() {
+        var stars = confirm("주식 사이트로 이동하시겠습니까?");
+        return stars;
+    }
+    function star11() {
+        var stars = confirm("날씨 사이트로 이동하시겠습니까?");
+        return stars;
+    }
+    function star12() {
+        var stars = confirm("배경화면 다운로드 사이트로 이동하시겠습니까?");
+        return stars;
+    }
+    function star13() {
+        var stars = confirm("인제대학교 생활관 사이트로 이동하시겠습니까?");
+        return stars;
+    }
+    function star14() {
+        var stars = confirm("쿠팡 사이트로 이동하시겠습니까?");
+        return stars;
+    }
+    function star15() {
+        var stars = confirm("Apple 사이트로 이동하시겠습니까?");
+        return stars;
+    }
+
+    var week = new Array('일', '월', '화', '수', '목', '금', '토');
+    var today = new Date();
+
+
+    function hm18nowtime(){
+		  var month,date,hours,minutes, seconds, ap,year,day;
+		  var intDate,intMon,intHours,intMinutes,intSeconds;
+		  var today=new Date();  
+          intYear = today.getFullYear();
+		  intDate = today.getDate();
+		  intMon = today.getMonth()+1;
+          intDay = today.getDay();
+		  intHours = today.getHours();
+		  intMinutes = today.getMinutes();
+		  intSeconds = today.getSeconds();  
+		  if(intMon < 10){ month = "0" + intMon; } 
+		  else { month = intMon; }
+		  if(intDate < 10){ date = "0" + intDate; } 
+		  else { date = intDate; }
+		  if (intHours == 0) { hours = "12:"; ap = "AM "; }
+		  
+		  else if (intHours < 12) { hours = intHours + ":"; ap = "AM "; } 
+		  else { intHours = (intHours - 12); hours =""+ intHours + ":"; ap = "PM "; }
+		  if (intMinutes < 10){ minutes = "0" + intMinutes + ":"; }
+		  else{ minutes = intMinutes + ":"; }
+		  if (intSeconds < 10){ seconds = "0" + intSeconds; }
+		  else{ seconds = intSeconds; }  
+		  document.getElementById("clock").innerHTML = ap+ hours + minutes + seconds  
+		  window.setTimeout("hm18nowtime()",1000);
+		  }
+		  window.onload=hm18nowtime
+
+          var hm18nalja = {
+
+            year: function() {
+              return today.getFullYear();
+            },
+            month: function() {
+              return today.getMonth() + 1;
+            },
+            date: function() {
+              return today.getDate();
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    
+    <header class="header">
+        <h1><a class="multiEffect" href="hm18_info2.html" target="myframe">[ HM18's Homepage ] </a></h1>
+
+        
+    </header>
+
+    <nav id="left">
+        <ul>
+            <li><a class="blurText" href="hm18_info2.html" target="myframe">Who is Hm18?</a></li>
+            <li><a class="blurText" href="hm18_daily.html" target="myframe">Hm18's Daily Life</a></li>
+            <li><a class="blurText" href="hm18_best3movie.html" target="myframe">Best 3 Movie</a></li>
+            <li><a class="blurText" class="blurText" href="hm18_best3country.html" target="myframe">Best 3 Country</a></li>
+            <li><a class="blurText" href="hm18_club.html" target="myframe">동호회 모집 안내</a></li>
+            <li><a class="blurText" href="hm18_iot.html" target="myframe">온도관리 (IoT)</a></li>
+            <li><a class="blurText" href="hm18_x-mas_card.html" target="myframe">X-Mas card</a></li>
+            <li><a class="blurText" href="hm18_x-mas_invitation.html" target="myframe">X-Mas 파티 초대장</a></li>	
+            <li><a class="blurText" href="hm18_fancy_calc.html" target="myframe">HM18's Calculator</a></li>													
+        </ul>
+</nav>
+    <nav class="nav">
+        <p class="multiEffect2" style="font-size: 17pt; text-align: center;">즐겨찾는 사이트</p>
+        <a onclick="return star1()" class="multiEffect3" href="https://github.com/lolmgs/hm18" target="_blank" style="font-size: 12pt; margin-left: 60px;"><strong>① HM18's Github</strong></a><br><br>
+        <a onclick="return star2()" class="multiEffect3" href="https://github.com/redwoods/html5" target="_blank" style="font-size: 12pt; margin-left: 60px;"><strong>② HTML5 강의자료 홈페이지</strong></a><br><br>
+        <a onclick="return star3()" class="multiEffect3" href="https://www.youtube.com/" target="_blank" style="font-size: 12pt; margin-left: 60px;"><strong>③ Youtube</strong></a><br><br>
+        <a onclick="return star4()" class="multiEffect3" href="https://news.naver.com/" target="_blank" style="font-size: 12pt; margin-left: 60px;"><strong>④ 네이버뉴스</strong></a><br><br>
+        <a onclick="return star5()" class="multiEffect3" href="https://cafe.naver.com/rookieonline" target="_blank" style="font-size: 12pt; margin-left: 60px;"><strong>⑤ 게임 카페</strong></a><br><br>
+        <a onclick="return star6()" class="multiEffect3" href="https://stud.inje.ac.kr/" target="_blank" style="font-size: 12pt; margin-left: 60px;"><strong>⑥ 인제정보시스템</strong></a><br><br>
+        <a onclick="return star7()" class="multiEffect3" href="https://comic.naver.com/webtoon/weekday.nhn" target="_blank" style="font-size: 12pt; margin-left: 60px;"><strong>⑦ 네이버 웹툰</strong></a><br><br>
+        <a onclick="return star8()" class="multiEffect3" href="https://www.instagram.com/" target="_blank" style="font-size: 12pt; margin-left: 60px;"><strong>⑧ Instagram</strong></a><br><br>
+        <a onclick="return star9()" class="multiEffect3" href="https://www.netflix.com/kr/" target="_blank" style="font-size: 12pt; margin-left: 60px;"><strong>⑨ Netflix</strong></a><br><br>
+        <a onclick="return star10()" class="multiEffect3" href="https://finance.naver.com/" target="_blank" style="font-size: 12pt; margin-left: 60px;"><strong>⑩ 주식</strong></a><br><br>
+        <a onclick="return star11()" class="multiEffect3" href="https://weather.naver.com/today/03250118" target="_blank" style="font-size: 12pt; margin-left: 60px;"><strong>⑪ 날씨</strong></a><br><br>
+        <a onclick="return star12()" class="multiEffect3" href="https://www.10wallpaper.com/kr/" target="_blank" style="font-size: 12pt; margin-left: 60px;"><strong>⑫ 배경화면 다운로드 사이트</strong></a><br><br>
+        <a onclick="return star13()" class="multiEffect3" href="https://dorm.inje.ac.kr/" target="_blank" style="font-size: 12pt; margin-left: 60px;"><strong>⑬ 인제대학교 생활관</strong></a><br><br>
+        <a onclick="return star14()" class="multiEffect3" href="https://www.coupang.com/" target="_blank" style="font-size: 12pt; margin-left: 60px;"><strong>⑭ 쿠팡</strong></a><br><br>
+        <a onclick="return star15()" class="multiEffect3" href="https://www.apple.com/kr/" target="_blank" style="font-size: 12pt; margin-left: 60px;"><strong>⑮ Apple</strong></a><br><br>
+    </nav>
+    <section class="section">
+        <article>	
+            <div class="iframebox">
+            <iframe src="hm18_info2.html" name="myframe" allowfullscreen> <!--width="850" height="757"-->
+            </iframe>
+            </div>		
+        </article>
+    </section>
+    <aside class="aside">
+        <div style=" background-color: #aaf0cf; padding: 1px; width:476px">
+            <p class="multiEffect4" style="text-align: center;"><strong>hm18's Homepage Login</strong></p>
+        </div>
+        <hr style="margin-top: -1px;">
+        <form>
+            <a class="" style="margin-left: 21px;"><strong>Membership ID :</strong> </a> <input type="text" size="15" value=""><br>
+            <a style="margin-left: 12px;"><strong>Membership PW :</strong> </a> <input type="password" size="15" value="">
+            <input style="color: black; margin-left: 5px;" type="button" value="로그인" size=10 onClick="location.href='hm18_login_succes.html'"><br>
+            <input style="margin-left: 12px;" type="checkbox" value="로그인" /><strong>자동 로그인</strong>
+            <hr>
+      
+            <iframe src="http://m.corona-live.com/" style="margin-top: -6px; width: 479px;" height="632px">
+                
+            </iframe>
+        </form>
+    
+    </aside>
+    <footer class="footer">
+        <p id="hm18" class="blurText" style="font-size: 15pt; text-align: left; font-style: italic; color: whitesmoke;">
+            HM18<br>20182572 이정호
+        </p>
+        <strong><div id="clock"></div></strong>
+        <strong><div id="clock2"><script>
+            document.write(hm18nalja.year()+"년 " + hm18nalja.month()+"월 "+hm18nalja.date()+"일");
+            document.write(" "+week[today.getDay()] + "요일");
+        </script>
+        </div></strong>
+    </footer>
+
+
+
+</body>
+
+</html>
