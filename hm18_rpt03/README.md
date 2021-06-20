@@ -1,3 +1,6 @@
+
+
+<hr>
 ## HM18의 홈페이지 V2
 - Semantic tag로 화면 layout 구성 하였다. header, nav, section, aside, footer 
 - 타이틀을 hm18 : 나는 누구인가? 로 설정하였고 [HM18's Homepage]를 클릭하면 who is hm18? 과 연결된다.<br>
